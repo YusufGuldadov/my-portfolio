@@ -13,9 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  
-  title: "Yusup Guldadov",
-  description: "Portfolio",
+  title: "Yusup Guldadov | Portfolio",
+  description: "Personal portfolio of Yusup Guldadov showcasing software and embedded projects.",
 };
 
 export default function RootLayout({
@@ -25,9 +24,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        {/* Google Search Console Verification */}
+        <meta
+          name="google-site-verification"
+          content="M2XR-kArq4Ql93wD9rOI-FXJifLHFjfF7NoxBbr6q5w"
+        />
+        {/* Optional SEO tags */}
+        <meta
+          name="keywords"
+          content="portfolio, software, embedded, GPS, LoRa, projects, Next.js, developer"
+        />
+        <meta name="author" content="Yusup Guldadov" />
+        <meta property="og:title" content="Yusup Guldadov | Portfolio" />
+        <meta
+          property="og:description"
+          content="Personal portfolio of Yusup Guldadov showcasing software and embedded projects."
+        />
+        <meta property="og:type" content="website" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
