@@ -39,7 +39,7 @@ export default function Contacts() {
         <a href="https://github.com/YusufGuldadov" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-gray-800 hover:text-gray-400 transition" />
         </a>
-        <a href="yusuf.guldadov@gmail.com">
+        <a href="mailto:yusuf.guldadov@gmail.com" aria-label="Send email">
           <FaEnvelope className="text-red-500 hover:text-red-400 transition" />
         </a>
         <a href="tel:+000000000">
