@@ -19,7 +19,7 @@ export default function Contacts() {
     }
 
     // Open default mail client
-    const mailtoLink = `mailto:yusup.cme@usask.ca.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:yusuf.guldadov@gmail.com?subject=${encodeURIComponent(
       form.company
     )}&body=${encodeURIComponent(form.message + "\n\nFrom: " + form.name + "\nEmail: " + form.email)}`;
 
@@ -39,7 +39,7 @@ export default function Contacts() {
         <a href="https://github.com/YusufGuldadov" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-gray-800 hover:text-gray-400 transition" />
         </a>
-        <a href="yusup.cme@usask.ca">
+        <a href="yusuf.guldadov@gmail.com">
           <FaEnvelope className="text-red-500 hover:text-red-400 transition" />
         </a>
         <a href="tel:+000000000">
