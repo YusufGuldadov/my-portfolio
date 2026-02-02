@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "eslint-config-next": "^16.0.7",
@@ -23,9 +22,8 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-
-  "scripts": {
-  "postbuild": "next-sitemap"
+    "scripts": {
+    "build": "next build --turbopack",
+    "postbuild": "next-sitemap"
   }
 }
-

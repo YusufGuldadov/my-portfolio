@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://my-portfolio-iota-three-x3suk6gipu.vercel.app
+
+# Sitemaps
+Sitemap: https://my-portfolio-iota-three-x3suk6gipu.vercel.app/sitemap.xml
