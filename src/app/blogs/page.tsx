@@ -35,6 +35,13 @@ export default function blogs() {
         "Designed and implemented an obstacle detection system for an autonomous golf caddy using ultrasonic sensors. Collaborated in a team for component selection, programming, and testing.",
       link: "/projects",
     },
+    {
+      name: "Yusup Guldadov",
+      project: "Computer Vision | Deep Learning",
+      description:
+        "Pedestrian-Detection-with-Faster-R-CNN, A high-performance pedestrian detection system using Faster R-CNN that identifies people in images with 98% accuracy. Trained on urban scene data, this model can be used for autonomous vehicles, surveillance, and smart city applications.",
+      link: "/projects",
+    },
   ];
 
   // Filter posts based on search query
@@ -45,11 +52,15 @@ export default function blogs() {
   );
 
   return (
-    <div className="min-h-screen p-10 bg-gray-50">
-      <h1 className="text-3xl font-bold mb-6 text-center">Blogs</h1>
+    // <div className="min-h-screen p-10 bg-gray-50">
+    <div
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col justify-between items-center"
+      style={{ backgroundImage: "url('/EDA.jpg')" }}
+    >
+      <h1 className="bg-white text-3xl font-bold  mt-20  text-center">Blogs</h1>
 
       {/* Search Bar */}
-      <div className="max-w-2xl mx-auto mb-8">
+      <div className="bg-white max-w-2xl mx-auto mb-4 p-10">
         <input
           type="text"
           placeholder="Search projects..."
@@ -65,7 +76,7 @@ export default function blogs() {
           filteredPosts.map((post, i) => (
             <div
               key={i}
-              className="bg-white/80 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow"
             >
               <h3 className="text-xl font-bold mb-2">{post.project}</h3>
               <p className="text-gray-700 mb-2">{post.description}</p>

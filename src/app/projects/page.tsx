@@ -3,12 +3,18 @@ import Link from "next/link";
 
 export default function Projects() {
   return (
+    <div
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col justify-between items-center"
+      style={{ backgroundImage: "url('/DSP.jpg')" }}
+    >
     <div className="font-sans grid grid-rows-[auto_1fr_auto] items-start justify-items-center min-h-screen p-10 gap-10 sm:p-20">
-      <h1 className="text-3xl font-bold">Software & Hardware Projects</h1>
+      <div className="bg-white/80">
+      <h1 className="text-3xl font-bold">Software & Hardware Projects</h1> </div>
       <div className="max-w-4xl w-full space-y-8">
         
 
         <section>
+          <div className="bg-white/80">
           <h2 className="text-2xl font-semibold mb-4">Software Projects</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>
@@ -39,10 +45,12 @@ export default function Projects() {
                <a href="https://github.com/YusufGuldadov/Channel-Based-Tool" className="text-blue-500 underline">GitHub</a>
             </li>
           </ul>
+          </div>
         </section>
 
       
         <section>
+          <div className="bg-white/80">
           <h2 className="text-2xl font-semibold mb-4">System Verilog Projects</h2>
           <ul className="list-disc list-inside space-y-2">
             <li>
@@ -58,12 +66,15 @@ export default function Projects() {
                 <a href="https://github.com/YusufGuldadov/-Hotel-door-lock-and-traffic-light-controller-on-FPGA" className="text-blue-500 underline">GitHub</a>
             </li>
           </ul>
+          </div>
         </section>
 
      
         <section>
+          <div className="bg-white/80">
           <h2 className="text-2xl font-semibold mb-4">Auto Caddy Capstone Project</h2>
-          <p>
+          <ul className="list-disc list-inside space-y-2">
+          <li>
             Designed and implemented an obstacle detection system for 
             an autonomous golf caddy using ultrasonic sensors, 
             achieving 90% accuracy through 600 tests. 
@@ -71,13 +82,52 @@ export default function Projects() {
             C programming, calculations, documentation, and successful project presentations,
              gaining strong technical and project management skills. 
              <a href="https://github.com/YusufGuldadov/Auto-Caddy" className="text-blue-500 underline">GitHub</a>
-          </p>
+          </li>
+          </ul>
+          </div>
         </section>
+
+        <section>
+          <div className="bg-white/80">
+          <h2 className="text-2xl font-semibold mb-4">Computer Vision | Deep Learning</h2>
+          <ul className="list-disc list-inside space-y-2">
+          <li>
+            A high-performance pedestrian detection system using Faster R-CNN that identifies 
+            people in images with 98% accuracy. Trained on urban scene data, this model can be 
+            used for autonomous vehicles, surveillance, and smart city applications. Production-ready model! 
+             <a href="https://github.com/YusufGuldadov/Pedestrian-Detection-with-Faster-R-CNN" className="text-blue-500 underline"> GitHub</a>
+          </li>
+          </ul>
+          </div>
+        </section>
+        
       </div>
-      <p className="text-sm text-gray-500">End of Projects</p>
+
+
+      <p className="bg-white/80 text-sm text-gray-500">End of Projects</p>
+
+
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">USST Rocketry Team</h2>
+         <h2 className="text-3xl font-bold">Work Experience and Extracurriculars</h2>
+        <div className="bg-white/70"> 
+
+        <h2 className="text-2xl font-semibold mb-2"> Web Developer & Administrator | ORBE FZE </h2>
+        <ul className="list-disc list-inside space-y-2 mb-3">
+          <li>
+            <p>(Wix website, deployed & administered), built and maintain company site, 
+            handle content updates, basic integrations and client communication.
+            <a href='https://www.orbe-fze.com' className="text-blue-500 underline">Website Link</a>
+            </p>
+    
+
+          </li>
+        </ul>
+
+
+
+
+        <h2 className="text-2xl font-semibold mb-3">USST Rocketry Team</h2>
         <ul className="list-disc list-inside space-y-2">
           <li>
             <p><strong>RYLR998 LoRa Module Configuration</strong> - Configured RYLR998 LoRa modules 
@@ -88,9 +138,9 @@ export default function Projects() {
             Configured Device Address and Network ID to enable multiple nodes to communicate within the same network. 
             Gained hands-on experience with radio configuration, 
             fine-tuning carrier frequency, and understanding trade-offs 
-            between data rate, range, and error resilience.</p>
+            between data rate, range, and error resilience.
             <a href='https://github.com/YusufGuldadov/RYLR998_LoRa_module' className="text-blue-500 underline">GitHub</a>
-
+            </p>
           </li>
 
           <li> <p>I configured a GPS module for a rocket to accurately capture 
@@ -106,6 +156,7 @@ export default function Projects() {
               </p>
           </li>
         </ul>
+        </div>
       </section>
 
 
@@ -133,6 +184,7 @@ export default function Projects() {
         </Link>
       </div>
 
+      </div>
       </div>
     
   );

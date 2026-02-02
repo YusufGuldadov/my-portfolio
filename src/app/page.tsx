@@ -4,23 +4,23 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div
-      className="min-h-screen w-full bg-contain bg-center bg-no-repeat flex flex-col justify-between items-center"
-      style={{ backgroundImage: "url('/alumni.png')" }}
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col justify-between items-center"
+      style={{ backgroundImage: "url('/Main.jpg')" }}
     >
       {/* About Section */}
       <div className="flex flex-col items-center justify-center flex-grow">
         <Image
-          src="/me.jpg"
+          src="/Grad.jpg"
           alt="My Photo"
           width={200}
           height={200}
           className="rounded-full mx-auto"
         />
 
-        <div className="bg-white/70 rounded-xl shadow-lg max-w-lg text-center mt-6 p-6">
+        <div className="bg-white/100 rounded-xl shadow-lg max-w-lg text-center mt-20 p-10">
           <h1 className="text-2xl font-bold mb-4">Yusup Guldadov</h1>
           <h1 className="text-2xl font-bold mb-4">About Me</h1>
-          <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 leading-relaxed text-lg font-bold">
+          <p className="text-lg  font-bold text-green-700">
             I recently graduated with a degree in Computer Engineering from University of
             Saskatchewan, where I built a strong foundation in both software and hardware
             systems. Throughout my studies, I worked on projects ranging from web
