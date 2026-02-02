@@ -10,7 +10,7 @@ export default function Home() {
       {/* About Section */}
       <div className="flex flex-col items-center justify-center flex-grow">
         <Image
-          src="/Grad.jpg"
+          src="/Grad1.jpg"
           alt="My Photo"
           width={200}
           height={200}
